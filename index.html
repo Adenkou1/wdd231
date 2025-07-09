@@ -1,0 +1,117 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Town Chamber of Commerce - Promoting local business and community growth">
+    <meta name="author" content="Your Name">
+    <title>Your Town Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<main class="home">
+    <section class="hero">
+        <picture>
+            <source media="(max-width: 600px)" srcset="images/hero-small.webp">
+            <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+            <img src="images/Sierra_Free.jpg" alt="Freetown downtown view" loading="lazy">
+        </picture>
+        <div class="hero-content">
+            <h2>Welcome to Freetown</h2>
+            <p>Building a stronger community through business</p>
+            <a href="join.html" class="btn">Join the Chamber</a>
+        </div>
+    </section>
+
+    <section class="weather card">
+        <h2>Current Weather</h2>
+        <div class="weather-current">
+            <div>
+                <img id="weather-icon" src="" alt="">
+                <p><span id="current-temp"></span>°F</p>
+            </div>
+            <div>
+                <p id="weather-desc"></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+            </div>
+        </div>
+        <div class="forecast">
+            <h3>3-Day Forecast</h3>
+            <div class="forecast-cards"></div>
+        </div>
+    </section>
+
+    <section class="spotlights">
+        <h2>Member Spotlights</h2>
+        <div class="spotlight-cards grid">
+            <div class="spotlight-card card">
+                <h3>Business of the Month</h3>
+                <img src="images/phone_bussi.png" alt="Local business" loading="lazy">
+                <p>"The chamber has helped us grow our customer base by 30% this year!"</p>
+                <p class="business-name">Main Street Cafe</p>
+                <a href="tel:+232 78 210773" class="btn btn-secondary">Call Now</a>
+            </div>
+            <!-- More spotlight cards -->
+        </div>
+    </section>
+
+    <section class="events card">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <div class="event">
+                <h3>Business Networking Luncheon</h3>
+                <p class="event-date">July 25, 2025 | 12:00 PM</p>
+                <p class="event-location">Community Center</p>
+                <a href="#" class="btn">RSVP</a>
+            </div>
+            <!-- More events -->
+        </div>
+    </section>
+
+    <section class="cta card">
+        <h2>Ready to Grow Your Business?</h2>
+        <p>Join over 200 local businesses who are expanding their networks and increasing visibility through the Your Town Chamber of Commerce.</p>
+        <div class="cta-buttons">
+            <a href="join.html" class="btn">Become a Member</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/Freetown chamber of commerce.png" alt="Chamber logo" width="150" height="150" loading="lazy">
+                <div>
+                    <h3>Freetown Chamber of Commerce</h3>
+                    <p>N1 Main Street, Freetown, ST 12345</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Freetown Chamber of Commerce. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+       <!-- Previous content -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/home.js"></script>

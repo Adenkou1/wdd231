@@ -1,0 +1,33 @@
+/* Medium View (Tablet) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .title h1 {
+        font-size: 1.3rem;
+    }
+    
+    .title h2 {
+        font-size: 0.9rem;
+    }
+    
+    #primary-nav {
+        flex-wrap: wrap;
+    }
+    
+    #primary-nav li {
+        margin: 0 0.5rem;
+    }
+    
+    #primary-nav a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Adjust grid layouts for medium screens */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

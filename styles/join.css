@@ -1,0 +1,135 @@
+/* Join Page Specific Styles */
+.join {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.membership-levels {
+    margin-bottom: 3rem;
+}
+
+.levels-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.level-card {
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.level-card:hover {
+    transform: translateY(-5px);
+}
+
+.level-card.highlight {
+    border: 3px solid var(--secondary-color);
+    position: relative;
+}
+
+.level-card.highlight::after {
+    content: "Most Popular";
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.level-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.level-card ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.level-card li {
+    margin-bottom: 0.5rem;
+}
+
+#join-form {
+    display: grid;
+    gap: 2rem;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+}
+
+legend {
+    padding: 0 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+}
+
+.radio-group {
+    display: grid;
+    gap: 1rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.error {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .levels-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #join-form {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    fieldset:last-child {
+        grid-column: 1 / -1;
+    }
+}

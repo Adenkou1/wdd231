@@ -1,0 +1,134 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Freetown Chamber of Commerce - Membership application">
+    <meta name="author" content="Azouma Gerard Adenkou">
+    <title>Join the Chamber | Freetown</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<main class="join">
+    <h1>Join the Chamber</h1>
+    
+    <section class="membership-levels card">
+        <h2>Membership Levels</h2>
+        <div class="levels-grid">
+            <div class="level-card">
+                <h3>Non-Profit</h3>
+                <p class="price">$100/year</p>
+                <ul>
+                    <li>Business listing in directory</li>
+                    <li>Monthly newsletter</li>
+                    <li>Access to member resources</li>
+                    <li>Basic training sessions</li>
+                </ul>
+            </div>
+            <div class="level-card highlight">
+                <h3>Silver</h3>
+                <p class="price">$250/year</p>
+                <ul>
+                    <li>All Non-Profit benefits</li>
+                    <li>Enhanced directory listing</li>
+                    <li>Social media promotion</li>
+                    <li>Discounts on events</li>
+                    <li>Business training workshops</li>
+                </ul>
+            </div>
+            <div class="level-card">
+                <h3>Gold</h3>
+                <p class="price">$500/year</p>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Premium directory placement</li>
+                    <li>Featured in newsletter</li>
+                    <li>Free event tickets</li>
+                    <li>Sponsorship opportunities</li>
+                    <li>VIP networking events</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <form id="join-form" class="card">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <div class="form-group">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <span id="first-name-error" class="error"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <span id="last-name-error" class="error"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+                <span id="email-error" class="error"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone*</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span id="phone-error" class="error"></span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Business Information</legend>
+            <div class="form-group">
+                <label for="business-name">Business Name*</label>
+                <input type="text" id="business-name" name="business-name" required>
+                <span id="business-name-error" class="error"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="business-position">Your Position/Title</label>
+                <input type="text" id="business-position" name="business-position">
+            </div>
+            
+            <div class="form-group">
+                <label for="business-description">Business Description</label>
+                <textarea id="business-description" name="business-description" rows="4"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Membership Level*</legend>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="np" name="membership" value="np" required>
+                    <label for="np">Non-Profit ($100/year)</label>
+                </div>
+                
+                <div class="radio-option">
+                    <input type="radio" id="silver" name="membership" value="silver">
+                    <label for="silver">Silver ($250/year)</label>
+                </div>
+                
+                <div class="radio-option">
+                    <input type="radio" id="gold" name="membership" value="gold">
+                    <label for="gold">Gold ($500/year)</label>
+                </div>
+            </div>
+            <span id="membership-error" class="error"></span>
+        </fieldset>
+
+        <input type="submit" value="Submit Application" class="btn">
+    </form>
+</main>
+    <!-- Previous content -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>

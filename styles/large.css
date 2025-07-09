@@ -1,0 +1,41 @@
+/* Large View (Desktop) */
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+    
+    .header-top {
+        padding: 1rem 2rem;
+    }
+    
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .title h1 {
+        font-size: 1.8rem;
+    }
+    
+    .title h2 {
+        font-size: 1.1rem;
+    }
+    
+    #primary-nav {
+        padding: 1rem 2rem;
+    }
+    
+    #primary-nav li {
+        margin: 0 1.5rem;
+    }
+    
+    /* Adjust grid layouts for large screens */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+        /* Special full-width sections */
+        .hero {
+            padding: 4rem 2rem;
+        }
+    }

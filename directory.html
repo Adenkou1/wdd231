@@ -1,0 +1,46 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freetown Business Directory - Find local businesses and services">
+    <meta name="author" content="Azouma Gerard Adenkou">
+    <title>Business Directory | Freetown Chamber</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<main class="directory">
+    <h1>Business Directory</h1>
+    
+    <div class="directory-controls card">
+        <div class="view-toggle">
+            <button id="grid-view" class="btn btn-secondary active">Grid View</button>
+            <button id="list-view" class="btn btn-secondary">List View</button>
+        </div>
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Search businesses...">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="Restaurant">Restaurants</option>
+                <option value="Retail">Retail</option>
+                <option value="Service">Services</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Professional">Professional Services</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="directory-container grid" id="directory">
+        <!-- Filled by JavaScript -->
+    </div>
+</main>
+    <!-- Previous content -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
